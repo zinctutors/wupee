@@ -46,7 +46,7 @@ Running the generator will do a few things:
 
   ```ruby
   # config/initializers/wupee.rb
-  Wupee.mailer = NotificationsMailer # the class of the mailer you will use to send the emails
+  Wupee.mailer = 'NotificationsMailer' # the class of the mailer you will use to send the emails
   Wupee.deliver_when = :now # use :later if you already configured a queuing system
  
   # uncomment and implement your logic here to avoid/permit email sending to your users

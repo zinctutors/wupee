@@ -81,7 +81,7 @@ module Wupee
     private
       def send_email(notification, subject_interpolations, locals_interpolations)
         deliver_method = "deliver_#{@deliver_when || Wupee.deliver_when}"
-        Wupee.mailer.send_mail_for(notification, subject_interpolations, locals_interpolations, @headers).send(deliver_method)
+        Wupee.mailer.constantize.send_mail_for(notification, subject_interpolations, locals_interpolations, @headers).send(deliver_method)
       end
 
       def interpolate_vars(vars, notification)

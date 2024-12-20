@@ -1,4 +1,4 @@
-Wupee.mailer = NotificationsMailer
+Wupee.mailer = 'NotificationsMailer'
 Wupee.deliver_when = :now
 
 # uncomment and implement your logic here to avoid/permit email sending to your users
